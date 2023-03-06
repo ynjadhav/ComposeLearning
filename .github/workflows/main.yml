@@ -73,7 +73,7 @@ jobs:
           java-version: 11
 
       - name: SonarCloud Scan
-        run: ./gradlew sonar -D "sonar.organization=ynjadhav" -D "sonar.projectKey=ynjadhav_ComposeDemo-CICD" -D "sonar.host.url=https://sonarcloud.io/" -D "sonar.login=d6fcf90cadaaa548a5aad8d26751a75c165cf3e3"
+        run: ./gradlew sonar -D "sonar.organization=ynjadhav" -D "sonar.projectKey=ynjadhav_ComposeLearning" -D "sonar.host.url=https://sonarcloud.io/" -D "sonar.login=d6fcf90cadaaa548a5aad8d26751a75c165cf3e3"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
