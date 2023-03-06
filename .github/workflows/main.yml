@@ -45,10 +45,10 @@ jobs:
       - name: Checkout the code
         uses: actions/checkout@v3
 
-      - name: Run espresso test
+      - name: Run espresso tests
         uses: reactivecircus/android-emulator-runner@v2
         with:
-          api-level: 33
+          api-level: 29
           script: ./gradlew connectedCheck
 
       - name: Upload test report
